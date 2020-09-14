@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB5BCA45-0B95-4E53-AA57-EBC08FC58BB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BotecoHitech</RootNamespace>
+    <AssemblyName>BotecoHitech</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fornecedor\AlterarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\AlterarFornecedor.Designer.cs">
+      <DependentUpon>AlterarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\CadastrarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\CadastrarFornecedor.Designer.cs">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\PesquisarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\PesquisarFornecedor.Designer.cs">
+      <DependentUpon>PesquisarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\Alterar Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\Alterar Produto.Designer.cs">
+      <DependentUpon>Alterar Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\Cadastrar Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\Cadastrar Produto.Designer.cs">
+      <DependentUpon>Cadastrar Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login e Tela principal\Alterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login e Tela principal\Alterar.Designer.cs">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login e Tela principal\Boteco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login e Tela principal\Boteco.Designer.cs">
+      <DependentUpon>Boteco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login e Tela principal\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login e Tela principal\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login e Tela principal\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login e Tela principal\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\Pesquisar produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\Pesquisar produto.Designer.cs">
+      <DependentUpon>Pesquisar produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login e Tela principal\Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login e Tela principal\Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Fornecedor\AlterarFornecedor.resx">
+      <DependentUpon>AlterarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\CadastrarFornecedor.resx">
+      <DependentUpon>CadastrarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor\PesquisarFornecedor.resx">
+      <DependentUpon>PesquisarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\Alterar Produto.resx">
+      <DependentUpon>Alterar Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login e Tela principal\Alterar.resx">
+      <DependentUpon>Alterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login e Tela principal\Boteco.resx">
+      <DependentUpon>Boteco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\Cadastrar Produto.resx">
+      <DependentUpon>Cadastrar Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login e Tela principal\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login e Tela principal\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\Pesquisar produto.resx">
+      <DependentUpon>Pesquisar produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login e Tela principal\Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

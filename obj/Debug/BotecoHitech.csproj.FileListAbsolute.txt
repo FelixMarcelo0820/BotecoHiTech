@@ -1,0 +1,12 @@
+C:\Users\erich\source\repos\BotecoHitech\bin\Debug\BotecoHitech.exe.config
+C:\Users\erich\source\repos\BotecoHitech\bin\Debug\BotecoHitech.exe
+C:\Users\erich\source\repos\BotecoHitech\bin\Debug\BotecoHitech.pdb
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.csprojAssemblyReference.cache
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.Login.resources
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.Properties.Resources.resources
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.csproj.GenerateResource.cache
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.csproj.CoreCompileInputs.cache
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.csproj.CopyComplete
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.exe
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.pdb
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.Boteco.resources
