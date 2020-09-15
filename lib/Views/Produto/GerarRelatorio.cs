@@ -50,6 +50,8 @@ namespace BotecoHitech.lib.Views.Produto
             dataGridView1.DrawToBitmap(bm, new Rectangle(0, 0, this.dataGridView1.Width, this.dataGridView1.Height)) ;
             e.Graphics.DrawImage(bm,10,10);
 
+            
+
 
         }
     }
