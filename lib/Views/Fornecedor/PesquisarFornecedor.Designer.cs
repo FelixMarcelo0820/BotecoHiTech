@@ -31,6 +31,7 @@
             this.dgvPesquisa = new System.Windows.Forms.DataGridView();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,17 +61,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 21);
+            this.label1.Location = new System.Drawing.Point(103, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Pesquisar fornecedores cadastrados";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(106, 24);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(240, 20);
+            this.txtPesquisa.TabIndex = 4;
             // 
             // PesquisarFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 498);
+            this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvPesquisa);
@@ -87,5 +96,6 @@
         private System.Windows.Forms.DataGridView dgvPesquisa;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }

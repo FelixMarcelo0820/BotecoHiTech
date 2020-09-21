@@ -27,7 +27,7 @@ namespace BotecoHitech
 
                 SqlConnection cone = new SqlConnection(@"Data Source=DESKTOP-VBS613M\MSSQLSERVER01;Initial Catalog=Buteco;Integrated Security=True");
 
-                SqlDataAdapter comando = new SqlDataAdapter("select * from Produto ORDER BY ID", cone);
+                SqlDataAdapter comando = new SqlDataAdapter("Select * from Produto where nome Like '%" + txtPesquisa.Text + "%'", cone);
 
                 DataTable tabela = new DataTable();
 
