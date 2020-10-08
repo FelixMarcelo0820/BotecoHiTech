@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using BotecoHitech.lib.Views.Produto;
-using BotecoHitech.lib.Views.Fornecedor;
+
 #pragma warning disable 0649
 
 namespace BotecoHitech
@@ -182,27 +181,9 @@ namespace BotecoHitech
             this.Close();
         }
 
-        private void relatórioDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            dgvPesquisa.Controls.Clear();
-            Relatorio impfrm = new Relatorio();
-            impfrm.TopLevel = false;
-            dgvPesquisa.Controls.Add(impfrm);
-            impfrm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            impfrm.Dock = DockStyle.Fill;
-            impfrm.Show();
-        }
+       
+    }
+}
 
-        private void relatórioDeFornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            dgvPesquisa.Controls.Clear();
-            RelatorioF imp2frm = new RelatorioF();
-            imp2frm.TopLevel = false;
-            dgvPesquisa.Controls.Add(imp2frm);
-            imp2frm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            imp2frm.Dock = DockStyle.Fill;
-            imp2frm.Show();
-        }
-    }
-    }
+
 

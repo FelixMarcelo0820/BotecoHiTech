@@ -50,8 +50,6 @@
             this.visualizarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripLabel8 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.relatórioDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatórioDeFornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -234,28 +232,11 @@
             // toolStripDropDownButton2
             // 
             this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.relatórioDeProdutosToolStripMenuItem,
-            this.relatórioDeFornecedoresToolStripMenuItem});
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
             this.toolStripDropDownButton2.Size = new System.Drawing.Size(29, 22);
             this.toolStripDropDownButton2.Text = "toolStripDropDownButton2";
-            // 
-            // relatórioDeProdutosToolStripMenuItem
-            // 
-            this.relatórioDeProdutosToolStripMenuItem.Name = "relatórioDeProdutosToolStripMenuItem";
-            this.relatórioDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.relatórioDeProdutosToolStripMenuItem.Text = "Relatório de produtos";
-            this.relatórioDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeProdutosToolStripMenuItem_Click);
-            // 
-            // relatórioDeFornecedoresToolStripMenuItem
-            // 
-            this.relatórioDeFornecedoresToolStripMenuItem.Name = "relatórioDeFornecedoresToolStripMenuItem";
-            this.relatórioDeFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.relatórioDeFornecedoresToolStripMenuItem.Text = "Relatório de fornecedores";
-            this.relatórioDeFornecedoresToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeFornecedoresToolStripMenuItem_Click);
             // 
             // toolStripSplitButton1
             // 
@@ -353,7 +334,5 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
-        private System.Windows.Forms.ToolStripMenuItem relatórioDeProdutosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem relatórioDeFornecedoresToolStripMenuItem;
     }
 }

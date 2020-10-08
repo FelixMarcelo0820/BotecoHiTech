@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading;
+using BotecoHitech.lib.Views.Produto;
+using BotecoHitech.lib.Views.Fornecedor;
 
 namespace BotecoHitech
 {
     public partial class PesquisarFornecedor : Form
     {
+        Thread t3;
+
         public PesquisarFornecedor()
         {
             InitializeComponent();
@@ -53,6 +58,19 @@ namespace BotecoHitech
                 MessageBox.Show(ex.Message);
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            t3 = new Thread(abrirJanela1);
+            t3.SetApartmentState(ApartmentState.STA);
+            t3.Start();
+        }
+        private void abrirJanela1(object obj)
+        {
+
+            Application.Run(new FrmExibeF());
         }
     }
 }

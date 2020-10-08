@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Drawing.Printing;
+using System.Threading;
+using BotecoHitech.lib.Views.Produto;
 
 namespace BotecoHitech
 {
     public partial class Pesquisar_produto : Form
     {
+        Thread t4;
 
         public Pesquisar_produto()
         {
@@ -65,6 +68,14 @@ namespace BotecoHitech
         private void button2_Click(object sender, EventArgs e)
         {
 
+            t4 = new Thread(abrirJanela1);
+            t4.SetApartmentState(ApartmentState.STA);
+            t4.Start();
+        }
+        private void abrirJanela1(object obj)
+        {
+
+            Application.Run(new FrmExibeP());
         }
     }
 }
