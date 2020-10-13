@@ -24,5 +24,10 @@ namespace BotecoHitech.lib.Views.Fornecedor
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

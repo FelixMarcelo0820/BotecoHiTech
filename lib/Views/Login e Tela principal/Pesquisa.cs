@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Threading;
+using BotecoHitech.lib.Views.Login_e_Tela_principal;
 
 namespace BotecoHitech
 {
+
+    
+
     public partial class Pesquisa : Form
     {
+
+        Thread t5;
         public Pesquisa()
         {
             InitializeComponent();
@@ -66,6 +72,19 @@ namespace BotecoHitech
         private void Pesquisa_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            t5 = new Thread(abrirJanela1);
+            t5.SetApartmentState(ApartmentState.STA);
+            t5.Start();
+        }
+        private void abrirJanela1(object obj)
+        {
+
+            Application.Run(new ExibeRelatUser());
         }
     }
 }

@@ -83,3 +83,4 @@ C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.lib.Views.Fornec
 C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.lib.Views.Produto.FrmExibeP.resources
 C:\Users\erich\source\repos\BotecoHitech\obj\Debug\RdlCompile.cache
 C:\Users\erich\source\repos\BotecoHitech\obj\Debug\RdlCompile.compiled
+C:\Users\erich\source\repos\BotecoHitech\obj\Debug\BotecoHitech.lib.Views.Login_e_Tela_principal.ExibeRelatUser.resources

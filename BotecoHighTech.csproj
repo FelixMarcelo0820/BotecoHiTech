@@ -76,6 +76,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetFornecedor.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetProd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
+    </Compile>
     <Compile Include="lib\Views\Fornecedor\AlterarFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +109,12 @@
     </Compile>
     <Compile Include="lib\Views\Fornecedor\PesquisarFornecedor.Designer.cs">
       <DependentUpon>PesquisarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\Views\Login e Tela principal\ExibeRelatUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lib\Views\Login e Tela principal\ExibeRelatUser.Designer.cs">
+      <DependentUpon>ExibeRelatUser.cs</DependentUpon>
     </Compile>
     <Compile Include="lib\Views\Produto\Alterar Produto.cs">
       <SubType>Form</SubType>
@@ -158,6 +174,8 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="lib\Relatorio\RelatFornecedor.rdlc" />
+    <EmbeddedResource Include="lib\Relatorio\RelatProd.rdlc" />
+    <EmbeddedResource Include="lib\Relatorio\ReportUser.rdlc" />
     <EmbeddedResource Include="lib\Views\Fornecedor\AlterarFornecedor.resx">
       <DependentUpon>AlterarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="lib\Views\Fornecedor\PesquisarFornecedor.resx">
       <DependentUpon>PesquisarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lib\Views\Login e Tela principal\ExibeRelatUser.resx">
+      <DependentUpon>ExibeRelatUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lib\Views\Produto\Alterar Produto.resx">
       <DependentUpon>Alterar Produto.cs</DependentUpon>
@@ -216,6 +237,28 @@
     </None>
     <None Include="DataSetFornecedor.xss">
       <DependentUpon>DataSetFornecedor.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetProd.xsc">
+      <DependentUpon>DataSetProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetProd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetProd.xss">
+      <DependentUpon>DataSetProd.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUser.xsc">
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetUser.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUser.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetUser.xss">
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

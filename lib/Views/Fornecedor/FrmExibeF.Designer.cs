@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dataSetFornecedor = new BotecoHitech.DataSetFornecedor();
             this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetFornecedor = new BotecoHitech.DataSetFornecedor();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.fornecedorTableAdapter = new BotecoHitech.DataSetFornecedorTableAdapters.FornecedorTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetFornecedor)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fornecedorBindingSource
+            // 
+            this.fornecedorBindingSource.DataMember = "Fornecedor";
+            this.fornecedorBindingSource.DataSource = this.dataSetFornecedor;
+            // 
+            // dataSetFornecedor
+            // 
+            this.dataSetFornecedor.DataSetName = "DataSetFornecedor";
+            this.dataSetFornecedor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -50,32 +60,23 @@
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(856, 501);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // dataSetFornecedor
-            // 
-            this.dataSetFornecedor.DataSetName = "DataSetFornecedor";
-            this.dataSetFornecedor.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // fornecedorBindingSource
-            // 
-            this.fornecedorBindingSource.DataMember = "Fornecedor";
-            this.fornecedorBindingSource.DataSource = this.dataSetFornecedor;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // fornecedorTableAdapter
             // 
             this.fornecedorTableAdapter.ClearBeforeFill = true;
             // 
-            // FrmExibeP
+            // FrmExibeF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 501);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmExibeP";
+            this.Name = "FrmExibeF";
             this.Text = "FrmExibeP";
             this.Load += new System.EventHandler(this.FrmExibeP_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetFornecedor)).EndInit();
             this.ResumeLayout(false);
 
         }
